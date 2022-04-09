@@ -7,7 +7,8 @@
     height: 36px;
     border-radius: 4px;
     cursor: pointer;  
-    margin-right: 8px;  
+    margin-right: 8px;
+    transition: opacity 0.15s;  
 }
 .join-button{
     background:#fff;
@@ -19,6 +20,7 @@
     width:64px;
     border-radius: 2px;
     cursor: pointer;
+    transition:background-color 1s;
 }
 .tweet-button{
     background-color: rgb(26, 147, 222);
@@ -31,77 +33,25 @@
     font-size: 15px;
     cursor:pointer;
     margin-left: 8px;
+    transition:box-shadow 0.15s,
+    color 0.15s;
 }
 /* exercises */
-.request-button{
-    color: #fff;
-    background-color:black;
-    border: none;
-    width:120px;
-    height:40px;
-    border-radius: 2px;
-    cursor: pointer;
+.subscribe-button:hover{
+    opacity: 0.5;
 }
-.add-to-cart-button{
-    background-color:rgb(238, 132, 12);
-    color: black;
-    width:200px;
-    height:40px;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-    font-weight: bolder;
+.subscribe-button:active{
+    opacity: 0.5;
 }
-.sign-up-button{
-    background-color:rgb(47, 224, 100);
-    color:#fff;
-    width: 110px;
-    height:40px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bolder;
-}
-.get-startted-button{
-    background-color:rgba(110, 3, 110, 0.608);
+.join-button:hover{
+    background-color:rgb(41, 118, 211);
     color: white;
-    border-radius: 5px;
-    height: 45px;
-    width:110px;
-    border: none;
-    cursor: pointer;
-}
-.download-button{
-    background-color:white;
-    color: gray;
-    border: 1px solid gray;
-    width: 90px;
-    height: 40px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.apply-company-button
-{
-    background-color:rgb(0, 136, 255);
-    color: white;
-    width: 210px;
-    height: 40px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: bolder;
-}
-.save-button
-{
-    color:rgb(0, 106, 255);
-    background-color:white;
-    border: 1px solid rgb(0, 106, 255);
-    width: 85px;
-    height:40px;
-    border-radius: 20px;
-    font-weight: bolder;
 }
 
-
-
-
+.join-button:active{
+    opacity:0.5;
+}
+.tweet-button:hover{
+    box-shadow: 2px 4px 20px rgba(2,10,2,.6);
+    
+}
