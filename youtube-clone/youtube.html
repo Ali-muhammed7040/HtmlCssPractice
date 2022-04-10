@@ -6,38 +6,79 @@
     <meta
       name="viewport"
       content="width=device-w
-    idth, initial-scale=1.0" />
+    idth, initial-scale=1.0"
+    />
     <title>Youtube.com Clone</title>
     <!-- css files -->
-    <link rel="stylesheet" href="video.css">
-    <link rel="stylesheet" href="general.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="video.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="sidebar.css" />
   </head>
   <body>
     <header class="header">
       <div class="left-section">
-        <img class="hamburger-menu" src="./hamburger-menu.svg" alt="">
-        <img class="youtube-logo" src="./images/youtube-logo.svg" alt="">
+        <img class="hamburger-menu" src="./hamburger-menu.svg" alt="" />
+        <img class="youtube-logo" src="./images/youtube-logo.svg" alt="" />
       </div>
       <div class="middle-section">
         <input class="search-bar" type="text" placeholder="Search" />
-        <button class="search-button"><img class="search-icon" src="./images/search.svg"></button>
-        <button class="voice-search-button"><img class="voice-search-icon" src="./images/voice-search-icon.svg"></button>
-        
+        <button class="search-button">
+          <img class="search-icon" src="./images/search.svg" />
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="./images/voice-search-icon.svg" />
+        </button>
       </div>
       <div class="right-section">
-        <img class="upload-icon" src="./images/upload.svg" alt="">
-        <img class="youtube-apps-icon" src="./images/youtube-apps.svg" alt="">
-        <img class="notification-icon" src="./images/notifications.svg" alt="">
-        <img class="current-user-picture" src="./images/my-channel.jpeg" alt="">
+        <img class="upload-icon" src="./images/upload.svg" alt="" />
+        <img class="youtube-apps-icon" src="./images/youtube-apps.svg" alt="" />
+        <div class="notifications-icon-container">
+          <img class="notification-icon" src="./images/notifications.svg" alt=""/>
+          <div class="notifications-count">3</div>
+        </div>
+        <img
+          class="current-user-picture"
+          src="./images/my-channel.jpeg"
+          alt=""
+        />
       </div>
     </header>
+    <div class="sidebar">
+      <div class="sidebar-link">
+        <img src="./images/sidebar icon/home.svg" alt="">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="./images/sidebar icon/explore.svg" alt="">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="./images/sidebar icon/subscriptions.svg" alt="">
+        <div>Subscription</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="./images/sidebar icon/originals.svg" alt="">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="./images/sidebar icon/youtube-music.svg" alt="">
+        <div>Yotube music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="./images/sidebar icon/library.svg" alt="">
+        <div>Library</div>
+      </div>
+    </div>
 
     <div class="video-grid">
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="./images/brownlee.webp" alt="image" />
+          <div class="video-time">14:20</div>   
         </div>
+
         <div class="video-info-grid">
           <div class="channel-pic">
             <img class="profile-pic" src="./images/channel-1.jpeg" alt="" />
@@ -54,6 +95,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="./images/thumbnail-2.webp" alt="image" />
+           <div class="video-time">14:20</div> 
         </div>
         <div class="video-info-grid">
           <div class="channel-pic">
@@ -69,6 +111,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="./images/thumbnail-3.webp" alt="image" />
+           <div class="video-time">14:20</div> 
         </div>
         <div class="video-info-grid">
           <div class="channel-pic">
@@ -86,10 +129,15 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="./images/thumbnail-4.webp" alt="image" />
+           <div class="video-time">14:20</div> 
         </div>
         <div class="video-info-grid">
           <div class="channel-pic">
-            <img class="profile-pic" src="./images/images/channel-4.jpeg" alt="" />
+            <img
+              class="profile-pic"
+              src="./images/images/channel-4.jpeg"
+              alt=""
+            />
           </div>
           <div class="video-info">
             <p class="video-title">Try Not To Laugh Challenge #9</p>
@@ -101,6 +149,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="./images/thumbnail-5.webp" alt="image" />
+           <div class="video-time">14:20</div> 
         </div>
         <div class="video-info-grid">
           <div class="channel-pic">
@@ -118,6 +167,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="./images/thumbnail-6.webp" alt="image" />
+           <div class="video-time">14:20</div> 
         </div>
         <div class="video-info-grid">
           <div class="channel-pic">
@@ -133,6 +183,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="./images/thumbnail-7.webp" alt="image" />
+           <div class="video-time">14:20</div> 
         </div>
         <div class="video-info-grid">
           <div class="channel-pic">
@@ -150,6 +201,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="./images/thumbnail-8.webp" alt="image" />
+           <div class="video-time">14:20</div> 
         </div>
         <div class="video-info-grid">
           <div class="channel-pic">
